@@ -3,7 +3,7 @@ Provides functions for extending the functionality of the chRoma package, includ
 
 # Installation
 You can install the package from GitHub with:
-# install.packages("devtools")
+##install.packages("devtools")
 devtools::install_github("fsteezy/chRomaExtensions")
 
 # Usage
