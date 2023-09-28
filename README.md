@@ -36,4 +36,4 @@ You can run the package tests with:
 devtools::test()
 
 ## Acknowledgments
-This package relies on the `chRoma` package for managing word vectors and performing various operations on them. We would like to extend our gratitude to the authors and contributors of the `chRoma` package for their hard work and open-source contributions. Without their efforts, this package would not have been possible. You can find more information about the `chRoma` package [here](link-to-chroma-package-repo).
+This package relies on the `chRoma` package for managing word vectors and performing various operations on them. We would like to extend our gratitude to the authors and contributors of the `chRoma` package for their hard work and open-source contributions. Without their efforts, this package would not have been possible. You can find more information about the `chRoma` package https://github.com/wincowgerDEV/chRoma.
