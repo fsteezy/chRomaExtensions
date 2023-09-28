@@ -1,12 +1,12 @@
 # chRomaExtensions
 Provides functions for extending the functionality of the chRoma package, including word vector similarity calculations. 
 
-#Installation
+# Installation
 You can install the package from GitHub with:
 # install.packages("devtools")
 devtools::install_github("fsteezy/chRomaExtensions")
 
-#Usage
+# Usage
 Here is a basic example:
 # Load the package
 library(your_package_name)
@@ -31,7 +31,7 @@ word2 <- "banana"
 similarity <- calculate_word_similarity(db, word1, word2)
 print(paste("Similarity between", word1, "and", word2, "is", similarity))
 
-#Testing
+# Testing
 You can run the package tests with:
 devtools::test()
 
