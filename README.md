@@ -9,7 +9,7 @@ devtools::install_github("fsteezy/chRomaExtensions")
 # Usage
 Here is a basic example:
 # Load the package
-library(your_package_name)
+library(chRomaExtensions)
 
 # Create a chRoma database
 db <- create_collection()
