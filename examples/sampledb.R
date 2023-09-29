@@ -26,13 +26,12 @@ saveRDS(db, file = "my_chroma_db.rds")
 # Load the database
 db <- readRDS("my_chroma_db.rds")
 
-# Convert the 'vector' column to numeric
-db$vectors$vector <- lapply(db$vectors$vector, as.numeric)
-
 # Check the class of the first element of 'vector'
-class(db$vectors$vector[[1]])
+class(db$vectors)
 
-
+word2 <- "banana"
+similarity <- calculate_word_similarity(db, word1, word2)
+print(paste("Similarity between", word1, "and", word2, "is", similarity))
 
 
 
