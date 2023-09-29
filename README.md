@@ -13,6 +13,7 @@ Here is a basic example:
 #Load the package
 
 ```
+library(chRoma)
 library(chRomaExtensions)
 ```
 #Create a chRoma database
