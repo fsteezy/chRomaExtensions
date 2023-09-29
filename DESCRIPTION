@@ -1,0 +1,16 @@
+Package: chRomaExtensions
+Title: Provides functions for extending the functionality of the chRoma package, including word vector similarity calculations.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Fabian", "Gomez", , "fabian.gomez@student.csulb.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description:The package provides a set of extensions and utilities that enhance the capabilities of the chRoma package, a framework for managing and querying word vectors. It includes functions for calculating word similarity based on word vectors stored within a chRoma database. This package simplifies word vector analysis tasks by offering convenient methods for querying and processing vector data, making it a valuable resource for researchers and data scientists working with textual data.
+License:MIT License
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+
+
