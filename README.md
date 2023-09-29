@@ -23,7 +23,6 @@ db <- create_collection()
 #Add word vectors and metadata to the database (you can provide your own data)
 ```
 word_vectors <- data.frame(
->>>>>>> 6efab01e324265a0749ff4ca882919fe4ea9d1db
   word = c("apple", "banana", "cherry"),
   vector = list(c(0.2, 0.4, 0.6), c(0.1, 0.3, 0.5), c(0.4, 0.2, 0.8)))
 metadata <- list(
@@ -32,7 +31,6 @@ metadata <- list(
   list(word = "cherry", description = "Description of cherry"))
 
 db <- add_collection(db, word_vectors, metadata)
-<<<<<<< HEAD
 ```
 
 #Calculate word similarity
