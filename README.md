@@ -16,30 +16,49 @@ Load the packages
 library(chRoma)
 library(chRomaExtensions)
 ```
-Create a chRoma database
+Create a new empty vector database
 ```
 db <- create_collection()
 ```
 
-Add word vectors and metadata to the database (you can provide your own data)
+Sample word vectors (store them as numeric)
 ```
 word_vectors <- data.frame(
-  word = c("apple", "banana", "cherry"),
-  vector = list(c(0.2, 0.4, 0.6), c(0.1, 0.3, 0.5), c(0.4, 0.2, 0.8)))
+  vector = list(as.numeric(c(0.2, 0.4, 0.6)), as.numeric(c(0.1, 0.3, 0.5)), as.numeric(c(0.4, 0.2, 0.8))),
+  row.names = c("apple", "banana", "cherry")  # Use row names for word identifiers
+)
+```
+Sample metadata (three entries) with the 'word' column
+```
 metadata <- list(
   list(word = "apple", description = "Description of apple"),
   list(word = "banana", description = "Description of banana"),
-  list(word = "cherry", description = "Description of cherry"))
-
+  list(word = "cherry", description = "Description of cherry")
+)
+```
+Add word vectors and metadata to the database
+```
 db <- add_collection(db, word_vectors, metadata)
+
+# Save the chRoma database to a file (e.g., using saveRDS)
+saveRDS(db, file = "my_chroma_db.rds")
 ```
 
-Calculate word similarity
-```word1 <- "apple"
+Load the database
+```
+db <- readRDS("my_chroma_db.rds")
+```
+
+Check the class of the first element of 'vector'
+```
+class(db$vectors)
+```
+```
 word2 <- "banana"
 similarity <- calculate_word_similarity(db, word1, word2)
 print(paste("Similarity between", word1, "and", word2, "is", similarity))
 ```
+
 # Testing
 You can run the package tests with:
 ```
